@@ -1,0 +1,8 @@
+@import "variables";
+
+$widget-border: $widget-border-thickness $widget-border-color $widget-border-pattern;
+
+$transparent-border: $selection-border-thickness transparent $selection-border-pattern;
+$selection-hover-border: $selection-border-thickness $selection-hover-border-color $selection-border-pattern;
+$selection-selected-border: $selection-border-thickness $selection-selected-border-color $selection-border-pattern;
+$selection-selected-unavailable-border: $selection-border-thickness $selection-selected-unavailable-border-color $selection-border-pattern;

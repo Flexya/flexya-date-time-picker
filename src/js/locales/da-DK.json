@@ -1,0 +1,27 @@
+{
+	"days": [
+		"Sø",
+		"Ma",
+		"Ti",
+		"On",
+		"To",
+		"Fr",
+		"Lø"
+	],
+	"months": [
+		"Januar",
+		"Februar",
+		"Marts",
+		"April",
+		"Maj",
+		"Juni",
+		"Juli",
+		"August",
+		"September",
+		"Oktober",
+		"November",
+		"December"
+	],
+	"timeFormat": "24",
+	"weekStart": 1
+}

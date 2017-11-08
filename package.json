@@ -1,0 +1,22 @@
+{
+  "name": "flexya-date-time-picker",
+  "version": "1.0.1",
+  "description": "A jQuery widget for Flexya's calendar services",
+  "license": "MIT",
+  "repository": "flexya/flexya-date-time-picker",
+  "main": "dist/flexya-date-time-picker.js",
+  "scripts": {
+    "prepublish": "webpack && webpack -p"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  }
+}

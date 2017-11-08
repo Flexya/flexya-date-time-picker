@@ -1,0 +1,104 @@
+@import "partials/derived";
+
+$selection-borders: (
+	hover: $selection-hover-border,
+	selected: $selection-selected-border,
+	selected-unavailable: $selection-selected-unavailable-border
+);
+
+.date-time-picker {
+	background-color: $background-color;
+	display: table;
+	border: $widget-border;
+
+	.unavailable {
+		background-color: $unavailable-background-color;
+	}
+
+	%picker-component {
+		display: table-cell;
+		vertical-align: top;
+		width: 50%;
+	}
+
+	.date-picker {
+		@extend %picker-component;
+		padding: $widget-margin 0;
+
+		.calendar {
+			padding: 0 $widget-margin;
+			border-right: $widget-border;
+			border-collapse: separate;
+
+			thead th {
+				text-align: center;
+			}
+
+			td {
+				text-align: center;
+				padding: 0.5 * $widget-margin;
+				cursor: pointer;
+				border: $transparent-border;
+			}
+
+			.day {
+				&.adjacent {
+					color: $adjacent-color;
+				}
+
+				@each $name, $border in $selection-borders {
+					&.#{$name} {
+						border: $border;
+					}
+				}
+			}
+		}
+	}
+
+	.time-picker {
+		@extend %picker-component;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: $widget-margin;
+			height: 0;
+			overflow: auto;
+
+			li {
+				cursor: pointer;
+				white-space: nowrap;
+				padding: $selection-border-thickness;
+
+				& > div {
+					margin-left: $widget-margin;
+					margin-right: $widget-margin;
+					border-bottom: $widget-border;
+				}
+
+				.minute {
+					margin-left: 2 * $widget-margin;
+					font-size: smaller;
+				}
+
+				@each $name, $border in $selection-borders {
+					&.#{$name} {
+						border-left: $border;
+						border-right: $border;
+						padding-left: 0;
+						padding-right: 0;
+
+						&.#{$name}-first {
+							border-top: $border;
+							padding-top: 0;
+						}
+
+						&.#{$name}-last {
+							border-bottom: $border;
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
