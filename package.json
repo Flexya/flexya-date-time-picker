@@ -1,6 +1,6 @@
 {
   "name": "flexya-date-time-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A jQuery widget for Flexya's calendar services",
   "license": "MIT",
   "repository": "flexya/flexya-date-time-picker",
