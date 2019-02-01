@@ -76,7 +76,7 @@ require('../scss/flexya-date-time-picker.scss');
 
 	$.extend(flexyaDateTimePicker, {
 		defaultOptions: {
-			url: 'https://service.boligsystem.flexya.dk/service/v20/calendar/list',
+			url: 'https://services.boligsystem.flexya.dk/service/v20/calendar/list',
 			calendarInterval: 900000,
 			locale: 'da-DK',
 			location: 'below'
