@@ -309,7 +309,7 @@ require('../scss/flexya-date-time-picker.scss');
 		end.setDate(end.getDate() + DAYS_TO_SHOW);
 
 		$.get({
-			url: options.url,
+			url: typeof options.url === "function" ? options.url() : options.url,
 			data: {
 				caseKey: options.caseKey,
 				startTime: start.getTime(),
